@@ -1,2 +1,7 @@
-tokens.py
+
 img/
+secret.py
+log.txt
+.venv/
+.venv3/
+.idea/

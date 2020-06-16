@@ -6,15 +6,24 @@ Before this bot can be use, please make sure you have this following requirement
 - Python 3 download [here](https://www.python.org/downloads/)
 - Pyautogui
 - Telepot
+- GI: https://pygobject.readthedocs.io/en/latest/getting_started.html#ubuntu-getting-started
 
 ## Installation
 #### Linux
-- pip3 install pyautogui
-- pip3 install telepot
 
-#### Windows 
-- pip install pyautogui
-- pip install telepot
+        git clone <this_repos\>
+        cd monbot
+        sudo pip3 install virtualenv --system
+        virtualenv .venv --python=python3
+        . .venv/bin/activate
+        pip3 install -U -r requirements.txt
+        cp secrets_example.py secrets.py
+        nano secrets.py
+        # set name and token you got from botfather
+        python mon.py
+        # invite bot into channel via telegram, and send him a command (starting with "/")
+        # read chat-id from bot's log and add the bot id to the whitelist in secrets.py
+
 
 ## Usage
 #### Setup bot Token
